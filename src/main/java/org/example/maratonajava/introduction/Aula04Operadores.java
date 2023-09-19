@@ -9,5 +9,15 @@ public class Aula04Operadores {
         double result = number1/number2;
         System.out.println(number1+number2);
         int salary = (int) 1222.2;
+
+        //operadores relacionais
+
+        int rest = 20 % 2;
+        System.out.println(rest);
+
+        //operadores logicos, sempre retornar um valor boolean true or false < >, <= >= == !=
+        boolean isBiggerThanTen = 10 > 20;
+        System.out.println(isBiggerThanTen);
+
     }
 }
