@@ -11,6 +11,7 @@ public class Aula01TiposPrimitivos {
         boolean verifyAge = false;
         long bigNumber = 1000000;
         char caracter = 'L';
+        String name = "a big text here, there is no limit of value here";
 
         System.out.println("The age is "+age);
 
