@@ -2,14 +2,18 @@ package org.example.maratonajava.introduction;
 
 public class Aula05EstruturasCondicionais {
     public static void main(String[] args) {
-        int age = 17;
-        boolean isAuthorizedBuyDrink = age >=18;
-        if (isAuthorizedBuyDrink) {
-            System.out.println("Can buy bear :)");
+        int age = 15;
+        boolean isAuthorizedBuyDrink = age >= 18;
+        String category;
+
+
+        if (age < 15) {
+            category = "category infantil";
+        } else if (age >= 15 && age < 18) {
+            category = "category juvenil";
+        } else {
+            category = "category adult";
         }
-        if(!isAuthorizedBuyDrink) {
-            System.out.println("Cant buy a drink :(");
-        }
-        System.out.println("continue...");
+        System.out.println(category);
     }
 }
