@@ -14,12 +14,15 @@ public class Aula06EstruturasDeRepeticao {
         do {
             System.out.println("dentro do do while");
         }
-        while(count <= 10);
+        while (count <= 10);
 
 
         //for
-        for(int variableIncrement = 0; variableIncrement < 10; variableIncrement++){
-            System.out.println("incrementing... "+variableIncrement);
+        for (int variableIncrement = 0; variableIncrement < 10; variableIncrement++) {
+            System.out.println("incrementing... " + variableIncrement);
         }
+
+
+
     }
 }

@@ -21,5 +21,18 @@ public class Aula06Exercicio {
                 System.out.println("invalid");
                 break;
         }
+
+        //imprimir todos os numeros pares ate 1000;
+        int value = 0;
+        for(int variableIncrement = 0; variableIncrement < 1000; variableIncrement++) {
+            if(value % 2 == 0) {
+                System.out.println(value+" is par");
+            }
+            else {
+                System.out.println(value+" is not par");
+            }
+            value ++;
+        }
+
     }
 }
