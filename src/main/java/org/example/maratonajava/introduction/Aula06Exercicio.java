@@ -24,15 +24,31 @@ public class Aula06Exercicio {
 
         //imprimir todos os numeros pares ate 1000;
         int value = 0;
-        for(int variableIncrement = 0; variableIncrement < 1000; variableIncrement++) {
-            if(value % 2 == 0) {
-                System.out.println(value+" is par");
+        for (int variableIncrement = 0; variableIncrement < 1000; variableIncrement++) {
+            if (value % 2 == 0) {
+                System.out.println(value + " is par");
+
+            } else {
+                System.out.println(value + " is not par");
             }
-            else {
-                System.out.println(value+" is not par");
-            }
-            value ++;
+
+
+            value++;
         }
 
+
+        int valueMax = 50;
+        for (int i = 0; i <= valueMax; i++) {
+            if (i > 25) {
+                break;
+            }
+            System.out.println(i);
+        }
+
+        double valueCar = 1000;
+        for (int parcela = 1; parcela <= 10; parcela++) {
+            double valueTotal = valueCar / parcela;
+            System.out.println("quantidade de parcelas: " + parcela + " valor de cada parcela: " + valueTotal);
+        }
     }
 }
