@@ -27,4 +27,30 @@ public class Calculadora {
         }
     }
 
+    public void changeTwoNumbers(int num1, int num2) {
+        num1 = 99;
+        num2 = 33;
+        System.out.println("inside of change two number");
+        System.out.println("num1 "+num1);
+        System.out.println("num2 "+num2);
+    }
+
+    public void sumArray(int[] numeros) {
+        int soma = 0;
+        for (int aux: numeros
+             ) {
+            soma += aux;
+        }
+        System.out.println(soma);
+    }
+
+    public void sumVarArgs(int...numeros) {
+        int soma = 0;
+        for (int aux: numeros
+        ) {
+            soma += aux;
+        }
+        System.out.println(soma);
+    }
+
 }
