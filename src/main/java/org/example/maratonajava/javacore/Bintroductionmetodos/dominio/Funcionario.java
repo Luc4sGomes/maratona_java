@@ -1,9 +1,10 @@
 package org.example.maratonajava.javacore.Bintroductionmetodos.dominio;
 
 public class Funcionario {
-    public String name;
-    public int age;
-    public double[] salary;
+    private String name;
+    private int age;
+    private double[] salary;
+    private double average;
 
     public void imprime() {
         System.out.println(this.name);
@@ -28,9 +29,37 @@ public class Funcionario {
         }
 
         System.out.println(keepSum / salary.length);
-
-
     }
 
+    public String getName() {
+        return name;
+    }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public double[] getSalary() {
+        return salary;
+    }
+
+    public void setSalary(double[] salary) {
+        this.salary = salary;
+    }
+
+    public double getAverage() {
+        return average;
+    }
+
+    public void setAverage(double average) {
+        this.average = average;
+    }
 }

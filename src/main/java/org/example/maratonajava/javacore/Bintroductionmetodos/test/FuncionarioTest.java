@@ -5,9 +5,9 @@ import org.example.maratonajava.javacore.Bintroductionmetodos.dominio.Funcionari
 public class FuncionarioTest {
     public static void main(String[] args) {
         Funcionario funcionario = new Funcionario();
-        funcionario.name = "carlos";
-        funcionario.age = 12;
-        funcionario.salary = new double[]{20,20,40};
+        funcionario.setName("calors");
+        funcionario.setAge(22);
+        funcionario.setSalary(new double[] {10,10,10});
 
         funcionario.imprime();
         funcionario.averageSalarys();
