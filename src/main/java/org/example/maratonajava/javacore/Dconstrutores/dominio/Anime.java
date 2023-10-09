@@ -1,20 +1,29 @@
-package org.example.maratonajava.javacore.CSobrecargametodos.dominio;
+package org.example.maratonajava.javacore.Dconstrutores.dominio;
 
 public class Anime {
     private String name;
     private String type;
     private String genery;
+    private String estudio;
     private int eps;
 
     public Anime() {
+        System.out.println("dentro do construtor sem argumentos");
     }
 
 
     public Anime(String name, String type, String genery, int eps) {
+        this();
         this.name = name;
         this.type = type;
         this.genery = genery;
         this.eps = eps;
+
+    }
+
+    public Anime(String name, String type, String genery, int eps, String estudio) {
+        this(name, type, genery, eps);
+        this.estudio = estudio;
 
     }
 

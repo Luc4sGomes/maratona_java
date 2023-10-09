@@ -1,4 +1,4 @@
-package org.example.maratonajava.javacore.CSobrecargametodos.testing;
+package org.example.maratonajava.javacore.CSobrecargametodos.test;
 
 import org.example.maratonajava.javacore.CSobrecargametodos.dominio.Anime;
 
