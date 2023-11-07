@@ -11,6 +11,10 @@ public enum TipoCliente {
         this.RELATORIO = relatorio;
     }
 
+//    public static TipoCliente tipoClientePorNomeRelatorio(String nomeRelatorio){
+//
+//    }
+
     public int getVALUE() {
         return VALUE;
     }
