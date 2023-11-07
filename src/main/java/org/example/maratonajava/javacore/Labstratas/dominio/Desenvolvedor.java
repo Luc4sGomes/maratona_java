@@ -1,21 +1,21 @@
 package org.example.maratonajava.javacore.Labstratas.dominio;
 
-public class Gerente extends Funcionario {
+public class Desenvolvedor extends Funcionario{
 
-    public Gerente(String nome, double salario) {
+    public Desenvolvedor(String nome, double salario) {
         super(nome, salario);
     }
 
     @Override
-    public void calculaBonus() {
-
-    }
-
-    @Override
     public String toString() {
-        return "Gerente{" +
+        return "Desenvolvedor{" +
                 "nome='" + nome + '\'' +
                 ", salario=" + salario +
                 '}';
+    }
+
+    @Override
+    public void calculaBonus() {
+        this.salario = this.salario + this.salario * 0.05;
     }
 }

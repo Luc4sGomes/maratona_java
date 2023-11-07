@@ -7,6 +7,11 @@ public class RH extends Funcionario{
     }
 
     @Override
+    public void calculaBonus() {
+
+    }
+
+    @Override
     public String toString() {
         return "RH{" +
                 "nome='" + nome + '\'' +
