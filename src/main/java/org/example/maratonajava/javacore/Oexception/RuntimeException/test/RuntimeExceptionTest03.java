@@ -10,17 +10,17 @@ public class RuntimeExceptionTest03 {
 
     }
 
-    public static void lerArquivo() {
-        Reader reader = null;
-        try {
-            reader = new BufferedReader(new FileReader("teste.txt"));
-            reader.close();
-        } catch (FileNotFoundException exception) {
-            exception.printStackTrace();
-        } finally {
-             reader.close();
-        }
-    }
+//    public static void lerArquivo() {
+//        Reader reader = null;
+//        try {
+//            reader = new BufferedReader(new FileReader("teste.txt"));
+//            reader.close();
+//        } catch (FileNotFoundException exception) {
+//            exception.printStackTrace();
+//        } finally {
+//             reader.close();
+//        }
+//    }
 
 
 
