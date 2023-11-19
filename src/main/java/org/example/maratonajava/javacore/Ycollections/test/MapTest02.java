@@ -11,6 +11,7 @@ public class MapTest02 {
     public static void main(String[] args) {
         Consumidor consumidor1 = new Consumidor("Peu da galinha");
         Consumidor consumidor2 = new Consumidor("Valmir");
+        Consumidor consumidor3 = new Consumidor("Louro da barraquinha");
 
         Manga manga1 = new Manga(1L, "Berserk", 99.0);
         Manga manga2 = new Manga(2L, "Nanatsu no tazai", 19.0);
@@ -21,11 +22,12 @@ public class MapTest02 {
         Map<Consumidor, Manga> consumidorMangaMap = new LinkedHashMap<>();
         consumidorMangaMap.put(consumidor1, manga2);
         consumidorMangaMap.put(consumidor2, manga1);
+        consumidorMangaMap.put(consumidor3, manga4);
 
-        for (Map.Entry<Consumidor, Manga> entry : consumidorMangaMap.entrySet()) {
-            System.out.println(entry.getKey().getNome() + " = " + entry.getValue().getNome());
+        for (Map.Entry<Consumidor, Manga> entry: consumidorMangaMap.entrySet()
+             ) {
+            System.out.println("O consumidor "+entry.getKey().getNome()+" comprou o manga: "+entry.getValue().getNome()+" Pelo preço:"+entry.getValue().getPreco());
         }
-
 
     }
 }
