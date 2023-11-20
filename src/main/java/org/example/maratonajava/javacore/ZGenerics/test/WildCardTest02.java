@@ -11,12 +11,12 @@ public class WildCardTest02 {
         List<Animal> animals = new ArrayList<>();
 
         printConsultaAnimal(animals);
-        printConsulta(cachorroList);
         printConsulta(gatoList);
-
+        printConsulta(cachorroList);
 
 
     }
+
 
     //wildCard = ?
     private static void printConsulta(List<? extends Animal> animals) {
