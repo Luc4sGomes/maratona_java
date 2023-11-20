@@ -8,14 +8,31 @@ public class WildCardTest02 {
 
         List<Cachorro> cachorroList = List.of(new Cachorro(), new Cachorro());
         List<Gato> gatoList = List.of(new Gato(), new Gato());
+        List<Animal> animals = new ArrayList<>();
+
+        printConsultaAnimal(animals);
+        printConsulta(cachorroList);
+        printConsulta(gatoList);
+
+
 
     }
 
-    private static void printConsulta(List<Animal> animals) {
+    //wildCard = ?
+    private static void printConsulta(List<? extends Animal> animals) {
+        Animal a = new Cachorro();
+        Animal b = new Gato();
         for (Animal animal : animals
 
         ) {
-            animals.add(new Cachorro());
+            animal.consulta();
         }
     }
+
+    private static void printConsultaAnimal(List<? super Animal> animals) {
+        Animal animal2 = new Gato();
+        animals.add(new Cachorro()); //garantia do polimorfismo
+        animals.add(new Gato());
+    }
+
 }
