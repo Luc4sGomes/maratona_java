@@ -11,6 +11,7 @@ public class ClasseGenericaTest {
     public static void main(String[] args) {
         List<Carro> carrosDisponiveis = new ArrayList<>(List.of(new Carro("Mercedes"), new Carro("BMW")));
         List<Barco> barcoList = new ArrayList<>(List.of(new Barco("Lancha"), new Barco("iate")));
+
         RentalService<Carro> rentalService = new RentalService<>(carrosDisponiveis);
         Carro carro = rentalService.buscarObjetoDisponivel();
         System.out.println("usando o carro por um mes...");
