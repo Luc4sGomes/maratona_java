@@ -28,6 +28,9 @@ public class ComportamentoPorParametroTest2 {
         List<Car> greenCarsRed = filter(cars, car -> car.getColor().equals("red"));
         List<Car> greenCarsBlack = filter(cars, car -> car.getColor().equals("black"));
 
+        List<Car> filteredCar = filter(cars, car -> car.getColor().equals("green"));
+
+
         System.out.println(yearBeforeCars);
         System.out.println(greenCarsRed);
         System.out.println(greenCarsBlack);
@@ -35,6 +38,7 @@ public class ComportamentoPorParametroTest2 {
         List<Integer> nums = List.of(1, 10, 200, 400, 500);
 
         System.out.println(filterGenericCar(nums, num -> num % 2 == 0));
+
 
     }
 
