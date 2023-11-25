@@ -9,7 +9,7 @@ import java.util.function.Predicate;
 public class LambdaTest02 {
     public static void main(String[] args) {
         List<String> strings = List.of("Saitama", "Guts");
-        List<Integer> mapearInteiros = mapear(strings, (String s) -> s.length());
+        List<Integer> mapearInteiros = mapear(strings, String::length);
         List<Integer> forEachInteger = new ArrayList<>();
         forEachInteger.add(100);
         forEachInteger.add(200);
@@ -23,7 +23,7 @@ public class LambdaTest02 {
 
         System.out.println(mapearInteiros);
 
-        List<String> mapearUpper = mapear(strings, s -> s.toUpperCase());
+        List<String> mapearUpper = mapear(strings, String::toUpperCase);
         System.out.println(mapearUpper);
     }
 
