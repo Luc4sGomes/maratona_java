@@ -85,7 +85,7 @@ public class GrupoPessoas {
         notasAlunos.put("Larissa", 5);
 
         System.out.println(notasAlunos);
-        System.out.println("- - - - - - -");
+        System.out.println("- - - - - - -");!
 
         Map<String, Integer> novoMapaNotas = new HashMap<String, Integer>();
         notasAlunos.forEach((nome, nota) -> novoMapaNotas.put(nome, nota));
@@ -100,6 +100,8 @@ public class GrupoPessoas {
 
         System.out.println(novoMapaNotasReference);
         System.out.println("- - - - - - -");
+
+        Arrays.asList()
 
     }
 }
