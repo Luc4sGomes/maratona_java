@@ -1,10 +1,8 @@
 package org.example.maratonajava.javacore.PadroesDeProjeto.test;
 
 import org.example.maratonajava.javacore.PadroesDeProjeto.Interfaces.CarBuilder;
-import org.example.maratonajava.javacore.PadroesDeProjeto.domain.Car;
-import org.example.maratonajava.javacore.PadroesDeProjeto.domain.CarBuilderImpl;
-import org.example.maratonajava.javacore.PadroesDeProjeto.domain.Director;
-import org.example.maratonajava.javacore.PadroesDeProjeto.domain.Person;
+import org.example.maratonajava.javacore.PadroesDeProjeto.Interfaces.PlanetBuilder;
+import org.example.maratonajava.javacore.PadroesDeProjeto.domain.*;
 
 public class BuilderPatternTest {
     public static void main(String[] args) {
@@ -27,7 +25,7 @@ public class BuilderPatternTest {
         System.out.println(person2);
 
 
-        //----------------------------------------------------
+        System.out.println("----------------------------------------------------");
 
 
         CarBuilder carBuilder = new CarBuilderImpl();
@@ -38,5 +36,19 @@ public class BuilderPatternTest {
 
         Car defaultCar = director.buildCarDefault();
         System.out.println("default Car: " + defaultCar.getModel() + " " + defaultCar.getMotor() + " " + defaultCar.getYearOfManufacture());
+
+
+        System.out.println("----------------------------------------------------");
+
+        PlanetBuilder planetBuilder = new PlanetBuilderImpl();
+        DirectorPlanet directorPlanet = new DirectorPlanet(planetBuilder);
+
+        Planet planetAqua = directorPlanet.buildPlanetAqua();
+        Planet planetEarth = directorPlanet.buildPlanetEarth();
+
+
+        System.out.println("Planet: " + planetAqua.getName() + " " + planetAqua.getHabitat() + " " + planetAqua.getSize());
+        System.out.println("Sporting Car: " + planetEarth.getName() + " " + planetEarth.getHabitat() + " " + planetEarth.getSize());
+
     }
 }
